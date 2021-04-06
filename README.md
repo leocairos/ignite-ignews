@@ -50,7 +50,7 @@ Trata-se de app para assinatura de conteudos (texto).
 
 ```bash
 git clone
- cd ignite-ignews
+cd ignite-ignews
 ```
 
 ## 📝 Licença
