@@ -34,17 +34,35 @@ Trata-se de app para assinatura de conteudos (texto).
     <img alt="Diagrama" title="Diagrama" src="./.github/Home.png" />
 </h1>
 
+[Oficial Figma](https://www.figma.com/file/gl0fHkQgvaUfXNjuwGtDDs/ig.news?node-id=1%3A2)
+[Copy of Oficial Figma](https://www.figma.com/file/HTnWm1Z088nZp9S0fqvnM1/ig.news-Copy?node-id=1%3A2)
+
 ### Diagrama de fluxo do APP
 
 <h1 align="center">
-    <img alt="Diagrama" title="Diagrama" src="./.github/fluxo-ig-news.png" />
+    <img alt="Diagrama de fluxo do APP" title="Diagrama de fluxo do APP" src="./.github/fluxo-ig-news.png" />
 </h1>
 
 ### APP model SPA (Single Page Application) vs SSR (Server Side Rendering)
 
 <h1 align="center">
-    <img alt="Diagrama" title="Diagrama" src="./.github/SPAvsSSR.png" />
+    <img alt="Diagrama APP model SPA vs SSR" title="APP model SPA vs SSR" src="./.github/SPAvsSSR.png" />
 </h1>
+
+### SSG (Static Site Generation)
+
+<h1 align="center">
+    <img alt="Diagrama SSG" title="Diagrama SSG" src="./.github/SSG.png" />
+</h1>
+
+### When use SPA, SSR and SSG
+
+- SPA (client-side) dynamic information not recomended for informatin indexation on searchs
+  * by useEfect
+- SSR (server-side) dynamic information, especific information for a especific user
+  * by GetServerSideProps
+- SSG (static) static information, generic information for all users.
+  * by GetStaticProps
 
 ### Execute
 
@@ -52,6 +70,33 @@ Trata-se de app para assinatura de conteudos (texto).
 git clone
 cd ignite-ignews
 ```
+
+## Plugins - Dev
+
+* VSCode CSS Modules
+  - Extension for CSS Modules, which supports:
+    * autocomplete
+    * go to definition
+
+
+## [Stripe](www.stripe.com)
+
+* Create free login account
+* Verify e-mail
+* Create a Business Account
+* Add a new product
+
+* Developers >> API keys
+  * Get a "Secret Key"
+  * Create a .env.local file in root project path
+  * Insert a propertie STRIPE_API_KEY with Secret Key value copied
+
+* Optimal
+  * Settings >> Branding:
+    * Brand color
+    * Accent color
+    * Icon
+    * Logo
 
 ## 📝 Licença
 
