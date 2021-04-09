@@ -98,6 +98,17 @@ cd ignite-ignews
     * Icon
     * Logo
 
+* Hooks
+  * settings >> checkout settings >> Clients & Server Integration >> Configure webhooks
+    * Install Cli for Dev mode
+      * Download/Install
+      * run command in prompt/shell: $ stripe login
+      * execute client: $ stripe listen --forward-to localhost:3000/api/webhooks
+    * Or, configure endpoint for Prod mode
+
+* Card for test
+  * 4242 4242 4242 4242
+
 ## [FaunaDB](https://fauna.com/) Database for App serverless
 
 * SignUp (Free account)
@@ -109,6 +120,19 @@ cd ignite-ignews
   * index name: user_by_email
   * terms: data.email
   * unique: true
+  * serialized: true
+* Create other Index for search
+  * Source colletion: users
+  * index name: user_by_stripe_customer_id
+  * terms: data.stripe_customer_id
+  * unique: false
+  * serialized: true
+* Create a New Collection (subscriptions)
+* Create other Index for search
+  * Source colletion: subscriptions
+  * index name: subscription_by_id
+  * terms: data.id
+  * unique: false
   * serialized: true
 
 *FaunaDB has a docker image for local use in dev mode.*
