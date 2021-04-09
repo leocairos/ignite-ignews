@@ -34,7 +34,7 @@ Trata-se de app para assinatura de conteudos (texto).
     <img alt="Diagrama" title="Diagrama" src="./.github/Home.png" />
 </h1>
 
-[Oficial Figma](https://www.figma.com/file/gl0fHkQgvaUfXNjuwGtDDs/ig.news?node-id=1%3A2)
+[Oficial Figma](https://www.figma.com/file/gl0fHkQgvaUfXNjuwGtDDs/ig.news?node-id=1%3A2) |
 [Copy of Oficial Figma](https://www.figma.com/file/HTnWm1Z088nZp9S0fqvnM1/ig.news-Copy?node-id=1%3A2)
 
 ### Diagrama de fluxo do APP
@@ -97,6 +97,25 @@ cd ignite-ignews
     * Accent color
     * Icon
     * Logo
+
+## [FaunaDB](https://fauna.com/) Database for App serverless
+
+* SignUp (Free account)
+* Create Database
+* Create New Key (in security)
+* Create a New Collection (users)
+* Create a Index for search
+  * Source colletion: users
+  * index name: user_by_email
+  * terms: data.email
+  * unique: true
+  * serialized: true
+
+*FaunaDB has a docker image for local use in dev mode.*
+
+## Tips/Notes
+
+* Set public e-mail on your github account
 
 ## 📝 Licença
 
