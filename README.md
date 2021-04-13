@@ -137,9 +137,56 @@ cd ignite-ignews
 
 *FaunaDB has a docker image for local use in dev mode.*
 
+## JAMStack - JavaScript API Markup
+
+### [Prismic CMS](https://prismic.io/)
+
+* create a free account
+* create a repository (NextJS)
+* create a repeatable type
+* create some documents by test
+* configure API: Settnings >> API & Security
+  * Set as Private API
+  * Generate an Access Token
+  * Copy "Permanent access tokens" to .env file
+
+
 ## Tips/Notes
 
 * Set public e-mail on your github account
+* CMS (Content Management System)
+  - Wordpress
+  x Drupal
+  x Joomla
+  x Magento (E-commerce)
+
+* Headless CMS (Painel de administração + API HTTP, GraphQL, SDK)
+  x Strapi
+  - Ghost (Blog, muito bom)
+  - keystone
+
+  - GraphCMS ()
+  - Prismic CMS (melhores planos)
+  - Contentful (mais caro, porem mais completo)
+
+  - Shopify
+  - Saleor
+
+* Uso do "prefetch" no component Link (from 'next/link') para pre-carregar a pagina tornando acesso mais rapido
+  ```HTML
+  <Link href="/posts" prefetch>
+  ```
+
+* Uso do 'cloneElement' para alterar propriedades de objetos filhos (children)
+  ```javascript
+  import { cloneElement} from "react"
+  ...
+    <Link {...rest}>
+      {cloneElement(children, {
+        className
+      })}
+    </Link>
+  ```
 
 ## 📝 Licença
 
