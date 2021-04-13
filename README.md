@@ -134,6 +134,18 @@ cd ignite-ignews
   * terms: data.id
   * unique: false
   * serialized: true
+* Create other Index for search
+  * Source colletion: subscriptions
+  * index name: subscription_by_user_ref
+  * terms: data.userId
+  * unique: false
+  * serialized: true
+* Create other Index for search
+  * Source colletion: subscriptions
+  * index name: subscription_by_status
+  * terms: data.status
+  * unique: false
+  * serialized: true
 
 *FaunaDB has a docker image for local use in dev mode.*
 
