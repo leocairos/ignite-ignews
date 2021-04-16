@@ -26,7 +26,7 @@
 O Ignite é um programa de aceleração para devs desenvolvido pela [Rocketseat](https://rocketseat.com.br/).
 
 
-## 💻 Sobre o Rentx
+## 💻 Sobre o Ignews
 
 Trata-se de app para assinatura de conteudos (texto).
 
@@ -161,7 +161,6 @@ cd ignite-ignews
   * Set as Private API
   * Generate an Access Token
   * Copy "Permanent access tokens" to .env file
-
 
 ## Tips/Notes
 
